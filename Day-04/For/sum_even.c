@@ -5,12 +5,12 @@ int main(){
     scanf("%d", &n);
     printf("n = %d\n", n);
 
-    int i, count = 0;
+    int i, sum = 0;
     for(i = 1; i <= n; i++){
         if(i % 2 == 0){
-            count++;
+            sum += i;
         }
     }
-    printf("count = %d", count);
+    printf("Sum = %d", sum);
     return 0;
 }

@@ -5,10 +5,12 @@ int main(){
     scanf("%d", &n);
     printf("n = %d\n", n);
 
-    int i, sum = 0;
-    for(i = 1; i <= n; i++){
-        sum += i;
+    int sum = 0, digit;
+    for( ; n != 0; ){
+        digit = n % 10;
+        sum += digit;
+        n = n / 10;
     }
     printf("Sum = %d", sum);
-    return 0;
+
 }
